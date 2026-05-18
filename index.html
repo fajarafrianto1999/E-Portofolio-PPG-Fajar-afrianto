@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio 1 | Refleksi Awal Mahasiswa</title>
+    <meta name="description" content="E-Portfolio 1 sebagai refleksi awal fondasi dasar karakter mahasiswa calon guru profesional.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons (Modern Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+    
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">E-Portofolio<span>.</span></span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#profil" class="nav-link">Profil</a>
+                <a href="#artefak" class="nav-link">Artefak</a>
+                <a href="#analisis" class="nav-link">Analisis Artefak</a>
+                <a href="#model-guru" class="nav-link">Model Guru</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Profil Singkat -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Fajar Afrianto</h1>
+                    <h2 class="hero-subtitle">
+                        Calon <span id="typewriter" class="gradient-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Portfolio ini merupakan refleksi awal sebagai fondasi dasar karakter untuk menjadi seorang pendidik yang profesional, berdedikasi, dan inspiratif.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#profil" class="btn btn-primary">Mulai Membaca <i class="ph ph-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="image-glow"></div>
+                    <img src="assets/fajar_profile.jpeg" alt="Foto Fajar Afrianto" class="hero-image">
+                    
+                    <!-- Floating badges -->
+                    <div class="floating-badge badge-1">
+                        <i class="ph ph-hard-hat"></i>
+                        <span>Mahasiswa PPG</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="ph ph-wrench"></i>
+                        <span>Calon Guru</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil Mahasiswa Lengkap -->
+        <section id="profil" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Profil Mahasiswa</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-content" style="max-width: 900px;">
+                    <div class="about-text glass-card" style="padding: 3rem; text-align: left;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;"><i class="ph ph-factory"></i> Asal Daerah & Keunikan</h3>
+                        <p>Halo, perkenalkan nama saya <strong>Fajar Afrianto</strong>. Saya berasal dari <strong>Bantul, Daerah Istimewa Yogyakarta</strong>, sebuah daerah yang terkenal dengan keunikan budayanya, yaitu <strong>budaya gotong royong yang masih kental dan kehidupan masyarakat yang sederhana namun penuh kebersamaan</strong>. Nilai-nilai luhur dari daerah asal ini telah membentuk karakter saya untuk selalu menghargai keberagaman dan pentingnya komunitas.</p>
+                        
+                        <h3 style="color: var(--secondary); margin-bottom: 1rem; margin-top: 2rem;"><i class="ph ph-lightning"></i> Inspirasi & Tujuan</h3>
+                        <p>Inspirasi terbesar saya untuk menjadi seorang guru profesional berawal dari <strong>[Ceritakan sosok inspiratif atau pengalaman pribadi yang menyentuh hati]</strong>. Saya menyadari bahwa pendidikan adalah fondasi untuk membangun peradaban. Tujuan utama saya bukan sekadar mentransfer ilmu, melainkan menjadi fasilitator yang mampu membangkitkan potensi terbaik setiap peserta didik, membentuk karakter mereka, dan mempersiapkan mereka menghadapi masa depan.</p>
+                        
+                        <div class="quote-container" style="margin-top: 3rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.05); border-radius: 0 12px 12px 0;">
+                            <p style="font-size: 1.25rem; font-style: italic; color: var(--text-main); margin-bottom: 1rem;">"Pendidikan bukan tentang memanaskan pikiran kosong dengan fakta-fakta, melainkan tentang menyalakan api keingintahuan dan kebijaksanaan dalam hati setiap anak."</p>
+                            <p style="font-weight: bold; color: var(--text-muted); font-size: 1rem;">— Socrates / [Nama Tokoh Inspiratif]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artefak Pembelajaran -->
+        <section id="artefak" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Kumpulan Artefak</h2>
+                    <div class="section-line"></div>
+                    <p style="margin-top: 1.5rem; color: var(--text-muted); max-width: 700px; margin-left: auto; margin-right: auto;">Kumpulan dokumen dan hasil karya sebagai bukti pelaksanaan pembelajaran.</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Artefak 1 -->
+                    <article class="project-card glass-card" style="padding: 2rem;">
+                        <div class="project-info" style="padding: 0;">
+                            <i class="ph ph-file-pdf" style="font-size: 3.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                            <h3 class="project-title">RPP (Rencana Pelaksanaan Pembelajaran)</h3>
+                            <p class="project-desc">Skenario pembelajaran terstruktur yang memandu jalannya proses penyampaian materi di kelas maupun bengkel.</p>
+                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
+                        </div>
+                    </article>
+
+                    <!-- Artefak 2 -->
+                    <article class="project-card glass-card" style="padding: 2rem;">
+                        <div class="project-info" style="padding: 0;">
+                            <i class="ph ph-video-camera" style="font-size: 3.5rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                            <h3 class="project-title">Video Mengajar</h3>
+                            <p class="project-desc">Rekaman visual praktik mengajar langsung yang menampilkan dinamika interaksi, pengelolaan kelas, dan penguasaan materi.</p>
+                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
+                        </div>
+                    </article>
+
+                    <!-- Artefak 3 -->
+                    <article class="project-card glass-card" style="padding: 2rem;">
+                        <div class="project-info" style="padding: 0;">
+                            <i class="ph ph-notebook" style="font-size: 3.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                            <h3 class="project-title">Bahan Ajar</h3>
+                            <p class="project-desc">Materi pembelajaran komprehensif yang disusun untuk mendukung pemahaman teori dan praktik kejuruan siswa.</p>
+                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
+                        </div>
+                    </article>
+
+                    <!-- Artefak 4 -->
+                    <article class="project-card glass-card" style="padding: 2rem;">
+                        <div class="project-info" style="padding: 0;">
+                            <i class="ph ph-images" style="font-size: 3.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                            <h3 class="project-title">Media Ajar</h3>
+                            <p class="project-desc">Alat bantu visual, digital, atau fisik yang mempermudah demonstrasi dan pemahaman siswa terhadap materi kompleks.</p>
+                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
+                        </div>
+                    </article>
+
+                    <!-- Artefak 5 -->
+                    <article class="project-card glass-card" style="padding: 2rem;">
+                        <div class="project-info" style="padding: 0;">
+                            <i class="ph ph-clipboard-text" style="font-size: 3.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                            <h3 class="project-title">LKM (Lembar Kerja Murid)</h3>
+                            <p class="project-desc">Lembar panduan kerja terstruktur untuk melatih keterampilan psikomotorik dan penyelesaian masalah di bengkel.</p>
+                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
+                        </div>
+                    </article>
+
+                    <!-- Artefak 6 -->
+                    <article class="project-card glass-card" style="padding: 2rem;">
+                        <div class="project-info" style="padding: 0;">
+                            <i class="ph ph-list-checks" style="font-size: 3.5rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                            <h3 class="project-title">Lembar Penilaian</h3>
+                            <p class="project-desc">Instrumen evaluasi dan rubrik objektif untuk mengukur kompetensi praktik dan pencapaian target pembelajaran.</p>
+                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analisis Artefak Produk Pembelajaran -->
+        <section id="analisis" class="section bg-secondary">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Analisis Artefak Pembelajaran</h2>
+                    <div class="section-line"></div>
+                    <p style="margin-top: 1.5rem; color: var(--text-muted); max-width: 700px; margin-left: auto; margin-right: auto;">Refleksi mendalam terhadap rancangan dan perangkat pembelajaran yang telah disusun.</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Kendala -->
+                    <article class="project-card glass-card" style="padding: 2rem;">
+                        <div class="project-info" style="padding: 0;">
+                            <i class="ph ph-warning-circle" style="font-size: 3.5rem; color: #f59e0b; margin-bottom: 1rem;"></i>
+                            <h3 class="project-title">Kendala Penyusunan</h3>
+                            <p class="project-desc">Selama proses penyusunan produk pembelajaran, kendala utama yang saya hadapi meliputi <strong>[contoh: penyesuaian alokasi waktu dengan keluasan materi, perumusan indikator yang selaras, atau mencari media interaktif]</strong>. Tantangan ini menuntut saya untuk lebih kreatif dalam merancang aktivitas.</p>
+                        </div>
+                    </article>
+
+                    <!-- Teori Pedagogi -->
+                    <article class="project-card glass-card" style="padding: 2rem;">
+                        <div class="project-info" style="padding: 0;">
+                            <i class="ph ph-gear" style="font-size: 3.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                            <h3 class="project-title">Teori/Konsep Pedagogi</h3>
+                            <p class="project-desc">Saya mengadopsi teori <strong>[contoh: Konstruktivisme Vygotsky / Problem-Based Learning]</strong>. Konsep ini memfasilitasi siswa untuk membangun pengetahuan sendiri melalui kolaborasi dan pemecahan masalah kontekstual yang relevan dengan kehidupan.</p>
+                        </div>
+                    </article>
+
+                    <!-- Faktor Keberhasilan -->
+                    <article class="project-card glass-card" style="padding: 2rem;">
+                        <div class="project-info" style="padding: 0;">
+                            <i class="ph ph-target" style="font-size: 3.5rem; color: #10b981; margin-bottom: 1rem;"></i>
+                            <h3 class="project-title">Faktor Keberhasilan</h3>
+                            <p class="project-desc">Keberhasilan penerapan produk pembelajaran didukung oleh: <strong>[contoh: relevansi LKPD dengan minat siswa, kejelasan instruksi, media visual yang menarik, dan antusiasme siswa dalam diskusi kelompok]</strong>.</p>
+                        </div>
+                    </article>
+
+                    <!-- Perubahan Komponen -->
+                    <article class="project-card glass-card" style="padding: 2rem;">
+                        <div class="project-info" style="padding: 0;">
+                            <i class="ph ph-arrows-clockwise" style="font-size: 3.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                            <h3 class="project-title">Adaptasi Situasi Kelas</h3>
+                            <p class="project-desc">Jika diterapkan pada situasi kelas berbeda, komponen yang perlu diubah adalah <strong>[contoh: metode asesmen yang lebih variatif, penyederhanaan media digital menjadi konvensional, atau modifikasi kesulitan tugas]</strong>.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Lampiran 7 & 8 -->
+                <div class="lampiran-container" style="margin-top: 4rem;">
+                    <div class="glass-card" style="padding: 2.5rem;">
+                        <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--text-main); text-align: center;">Instrumen Penilaian & Hasil Observasi</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                            <div style="background: rgba(15, 23, 42, 0.5); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                                <h4 style="color: var(--primary); margin-bottom: 1rem;"><i class="ph ph-ruler"></i> Lampiran 7: Penilaian Perangkat</h4>
+                                <p style="color: var(--text-muted); font-size: 0.95rem;">Berdasarkan penilaian guru pamong, rancangan pembelajaran mendapat masukan positif pada <strong>[Sebutkan keunggulan]</strong>. Catatan perbaikan adalah <strong>[Sebutkan saran perbaikan]</strong>, yang membantu menyempurnakan RPP/Modul Ajar.</p>
+                                <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1rem; width: 100%;"><i class="ph ph-download-simple"></i> Unduh Lampiran 7</a>
+                            </div>
+                            <div style="background: rgba(15, 23, 42, 0.5); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                                <h4 style="color: var(--secondary); margin-bottom: 1rem;"><i class="ph ph-presentation-chart"></i> Lampiran 8: Praktik Mengajar</h4>
+                                <p style="color: var(--text-muted); font-size: 0.95rem;">Evaluasi praktik mengajar selama 3 siklus. Siklus I berfokus pada <strong>[Pengelolaan kelas]</strong>. Siklus II menunjukkan progres pada <strong>[Interaksi siswa]</strong>, dan Siklus III memantapkan kompetensi <strong>[Penggunaan model secara utuh]</strong>.</p>
+                                <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1rem; width: 100%;"><i class="ph ph-download-simple"></i> Unduh Lampiran 8</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model Guru yang Dituju -->
+        <section id="model-guru" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Model Guru yang Dituju</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Misi -->
+                    <div class="skill-card glass-card" style="grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 3rem;">
+                        <i class="ph ph-engine skill-icon" style="color: #ef4444; font-size: 4rem;"></i>
+                        <h3 style="font-size: 2rem; margin-bottom: 1rem;">Misi Profesional</h3>
+                        <p style="font-size: 1.1rem; max-width: 800px; color: var(--text-muted);">"Menciptakan lingkungan belajar yang inklusif, inovatif, dan berpusat pada peserta didik, untuk mencetak generasi yang cerdas secara akademik dan memiliki karakter luhur sesuai Profil Pelajar Pancasila."</p>
+                    </div>
+
+                    <!-- Kompetensi -->
+                    <div class="skill-card glass-card">
+                        <i class="ph ph-cpu skill-icon" style="color: var(--primary);"></i>
+                        <h3>Kompetensi Pedagogik</h3>
+                        <p>Menguasai materi pembelajaran mendalam dan mengaplikasikan model pembelajaran inovatif yang mengintegrasikan TPACK (Technological Pedagogical Content Knowledge).</p>
+                    </div>
+
+                    <!-- Karakter 1 -->
+                    <div class="skill-card glass-card">
+                        <i class="ph ph-handshake skill-icon" style="color: #ec4899;"></i>
+                        <h3>Empati & Kepedulian</h3>
+                        <p>Menjadi teladan yang memiliki empati tinggi, mampu memahami kondisi psikologis siswa, dan merangkul keberagaman di dalam kelas.</p>
+                    </div>
+
+                    <!-- Karakter 2 -->
+                    <div class="skill-card glass-card">
+                        <i class="ph ph-battery-charging skill-icon" style="color: #10b981;"></i>
+                        <h3>Pembelajar Sepanjang Hayat</h3>
+                        <p>Memiliki <em>Growth Mindset</em> untuk terus belajar, melakukan refleksi diri, dan adaptif terhadap perkembangan pendidikan dan teknologi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <span class="logo-text">E-Portofolio<span>.</span></span>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> E-Portfolio Mahasiswa PPG. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
