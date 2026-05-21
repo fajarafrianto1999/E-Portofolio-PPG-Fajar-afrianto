@@ -8,7 +8,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <!-- Phosphor Icons (Modern Icons) -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="styles.css">
@@ -22,8 +22,9 @@
     <!-- Navigation -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#home" class="logo">
-                <span class="logo-text">E-Portofolio<span>.</span></span>
+            <a href="#home" class="logo" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                <img src="assets/logo_ust.png" alt="Logo UST" style="height: 42px; width: auto; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">
+                <span style="color: #ffffff; font-weight: 700; font-size: 1.15rem; letter-spacing: 0.5px; line-height: 1.2;">Universitas Sarjanawiyata Tamansiswa</span>
             </a>
             
             <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
@@ -36,6 +37,7 @@
                 <a href="#artefak" class="nav-link">Artefak</a>
                 <a href="#analisis" class="nav-link">Analisis Artefak</a>
                 <a href="#model-guru" class="nav-link">Model Guru</a>
+                <a href="#kontak" class="nav-link">Kontak</a>
             </nav>
         </div>
     </header>
@@ -43,11 +45,12 @@
     <main>
         <!-- Hero / Profil Singkat -->
         <section id="home" class="hero">
+            <div class="spark-container" id="spark-container"></div>
             <div class="container hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title">Fajar Afrianto</h1>
-                    <h2 class="hero-subtitle">
-                        Calon <span id="typewriter" class="gradient-text"></span><span class="cursor">|</span>
+                    <h2 class="hero-subtitle" style="font-family: 'Fira Code', monospace; letter-spacing: 2px; color: var(--primary-neon); font-size: 1.15rem; margin-bottom: 1.5rem;">
+                        NIM. 20250843725
                     </h2>
                     <p class="hero-description">
                         Portfolio ini merupakan refleksi awal sebagai fondasi dasar karakter untuk menjadi seorang pendidik yang profesional, berdedikasi, dan inspiratif.
@@ -57,18 +60,7 @@
                     </div>
                 </div>
                 <div class="hero-image-container">
-                    <div class="image-glow"></div>
-                    <img src="assets/fajar_profile.jpeg" alt="Foto Fajar Afrianto" class="hero-image">
-                    
-                    <!-- Floating badges -->
-                    <div class="floating-badge badge-1">
-                        <i class="ph ph-hard-hat"></i>
-                        <span>Mahasiswa PPG</span>
-                    </div>
-                    <div class="floating-badge badge-2">
-                        <i class="ph ph-wrench"></i>
-                        <span>Calon Guru</span>
-                    </div>
+                    <img src="assets/fajar_cropped.png" alt="Foto Fajar Afrianto" class="hero-image">
                 </div>
             </div>
         </section>
@@ -81,18 +73,72 @@
                     <div class="section-line"></div>
                 </div>
                 
-                <div class="about-content" style="max-width: 900px;">
-                    <div class="about-text glass-card" style="padding: 3rem; text-align: left;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem;"><i class="ph ph-factory"></i> Asal Daerah & Keunikan</h3>
-                        <p>Halo, perkenalkan nama saya <strong>Fajar Afrianto</strong>. Saya berasal dari <strong>Bantul, Daerah Istimewa Yogyakarta</strong>, sebuah daerah yang terkenal dengan keunikan budayanya, yaitu <strong>budaya gotong royong yang masih kental dan kehidupan masyarakat yang sederhana namun penuh kebersamaan</strong>. Nilai-nilai luhur dari daerah asal ini telah membentuk karakter saya untuk selalu menghargai keberagaman dan pentingnya komunitas.</p>
-                        
-                        <h3 style="color: var(--secondary); margin-bottom: 1rem; margin-top: 2rem;"><i class="ph ph-lightning"></i> Inspirasi & Tujuan</h3>
-                        <p>Inspirasi terbesar saya untuk menjadi seorang guru profesional berawal dari <strong>[Ceritakan sosok inspiratif atau pengalaman pribadi yang menyentuh hati]</strong>. Saya menyadari bahwa pendidikan adalah fondasi untuk membangun peradaban. Tujuan utama saya bukan sekadar mentransfer ilmu, melainkan menjadi fasilitator yang mampu membangkitkan potensi terbaik setiap peserta didik, membentuk karakter mereka, dan mempersiapkan mereka menghadapi masa depan.</p>
-                        
-                        <div class="quote-container" style="margin-top: 3rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.05); border-radius: 0 12px 12px 0;">
-                            <p style="font-size: 1.25rem; font-style: italic; color: var(--text-main); margin-bottom: 1rem;">"Pendidikan bukan tentang memanaskan pikiran kosong dengan fakta-fakta, melainkan tentang menyalakan api keingintahuan dan kebijaksanaan dalam hati setiap anak."</p>
-                            <p style="font-weight: bold; color: var(--text-muted); font-size: 1rem;">— Socrates / [Nama Tokoh Inspiratif]</p>
+                <div class="about-content" style="max-width: 1200px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin: 0 auto; text-align: left;">
+                    <!-- Kartu 1: Latar Belakang -->
+                    <div class="about-text glass-card" style="padding: 2.5rem; text-align: left; display: flex; flex-direction: column;">
+                        <h3 style="color: var(--primary-neon); margin-bottom: 1.5rem; font-family: var(--font-cyber);"><i class="ph ph-factory"></i> Latar Belakang</h3>
+                        <p style="margin-bottom: 1rem; line-height: 1.7;">Halo, perkenalkan nama saya <strong>Fajar Afrianto</strong>. Saya berasal dari <strong>Bantul, Daerah Istimewa Yogyakarta</strong>.</p>
+                        <p style="line-height: 1.7; color: var(--text-muted);">Daerah Bantul terkenal dengan keunikan budayanya, terutama <strong>budaya gotong royong yang masih kental dan kehidupan masyarakat yang sederhana namun penuh kebersamaan</strong>. Nilai-nilai gotong royong dan kesederhanaan ini membentuk karakter saya untuk selalu menghargai keberagaman, kerja sama, dan pentingnya kontribusi positif bagi komunitas sekitar.</p>
+                    </div>
+
+                    <!-- Kartu 2: Motivasi & Inspirasi -->
+                    <div class="about-text glass-card" style="padding: 2.5rem; text-align: left; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h3 style="color: var(--secondary-neon); margin-bottom: 1.5rem; font-family: var(--font-cyber);"><i class="ph ph-lightning"></i> Motivasi & Inspirasi</h3>
+                            <p style="margin-bottom: 1rem; line-height: 1.7;">Inspirasi terbesar saya untuk menjadi guru profesional berawal dari pengalaman berharga bertemu dengan guru yang tidak hanya mentransfer ilmu, tetapi juga memberikan teladan hidup yang luar biasa.</p>
+                            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--text-muted);">Pendidikan adalah fondasi utama masa depan bangsa. Tujuan saya adalah menjadi pendidik sekaligus fasilitator yang mampu menyalakan potensi terbaik siswa dan membimbing mereka dengan ketulusan.</p>
                         </div>
+                        <div class="quote-container" style="padding: 1.25rem; border-left: 3px solid var(--accent); background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0;">
+                            <p style="font-size: 0.95rem; font-style: italic; color: var(--text-main); margin-bottom: 0; line-height: 1.5;">"Pendidikan bukan tentang mengisi wadah kosong, melainkan menyalakan api keingintahuan."</p>
+                        </div>
+                    </div>
+
+                    <!-- Kartu 3: Riwayat Hidup -->
+                    <div class="about-text glass-card" style="padding: 2.5rem; text-align: left; display: flex; flex-direction: column;">
+                        <h3 style="color: var(--primary-neon); margin-bottom: 1.5rem; font-family: var(--font-cyber);"><i class="ph ph-user"></i> Riwayat Hidup</h3>
+                        
+                        <!-- Pendidikan -->
+                        <h4 style="color: var(--text-main); font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;"><i class="ph ph-graduation-cap"></i> Pendidikan</h4>
+                        <ul style="list-style: none; padding-left: 0; margin-bottom: 1.5rem;">
+                            <li style="margin-bottom: 0.75rem; position: relative; padding-left: 1.25rem;">
+                                <span style="position: absolute; left: 0; color: var(--primary-neon);">•</span>
+                                <strong style="color: var(--text-main); font-size: 0.95rem;">PPG Prajabatan</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">UST Yogyakarta (Sekarang)</span>
+                            </li>
+                            <li style="margin-bottom: 0; position: relative; padding-left: 1.25rem;">
+                                <span style="position: absolute; left: 0; color: var(--primary-neon);">•</span>
+                                <strong style="color: var(--text-main); font-size: 0.95rem;">S1 Pendidikan Teknik Mesin</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">UNY (Angkatan 2018)</span>
+                            </li>
+                        </ul>
+
+                        <!-- Pengalaman Kerja -->
+                        <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;"><i class="ph ph-briefcase"></i> Pengalaman Kerja</h4>
+                        <ul style="list-style: none; padding-left: 0; margin-bottom: 1.5rem;">
+                            <li style="margin-bottom: 0; position: relative; padding-left: 1.25rem;">
+                                <span style="position: absolute; left: 0; color: var(--secondary-neon);">•</span>
+                                <strong style="color: var(--text-main); font-size: 0.95rem;">Instruktur Pengelasan</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Lembaga Pelatihan Kerja (LPK)</span>
+                            </li>
+                        </ul>
+
+                        <!-- Prestasi -->
+                        <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;"><i class="ph ph-trophy"></i> Prestasi</h4>
+                        <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
+                            <li style="margin-bottom: 0.75rem; position: relative; padding-left: 1.25rem;">
+                                <span style="position: absolute; left: 0; color: var(--accent);">•</span>
+                                <strong style="color: var(--text-main); font-size: 0.95rem;">Juara 3 Welding UGM 2016</strong>
+                            </li>
+                            <li style="margin-bottom: 0.75rem; position: relative; padding-left: 1.25rem;">
+                                <span style="position: absolute; left: 0; color: var(--accent);">•</span>
+                                <strong style="color: var(--text-main); font-size: 0.95rem;">Juara 1 LKS DIY 2017</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Prototype Modeling</span>
+                            </li>
+                            <li style="margin-bottom: 0; position: relative; padding-left: 1.25rem;">
+                                <span style="position: absolute; left: 0; color: var(--accent);">•</span>
+                                <strong style="color: var(--text-main); font-size: 0.95rem;">Juara 1 Welding UNS</strong>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -108,14 +154,29 @@
                 </div>
                 
                 <div class="projects-grid">
-                    <!-- Artefak 1 -->
+                    <!-- RPP (Rencana Pelaksanaan Pembelajaran) -->
                     <article class="project-card glass-card" style="padding: 2rem;">
                         <div class="project-info" style="padding: 0;">
                             <i class="ph ph-file-pdf" style="font-size: 3.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
                             <h3 class="project-title">RPP (Rencana Pelaksanaan Pembelajaran)</h3>
-                            <p class="project-desc">Skenario pembelajaran terstruktur yang memandu jalannya proses penyampaian materi di kelas maupun bengkel.</p>
-                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
+                            <p class="project-desc">Skenario pembelajaran Pemesinan Bubut terstruktur yang dibagi menjadi 3 siklus pelaksanaan:</p>
+                            <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1.5rem;">
+                                <a href="javascript:void(0)" onclick="openPdfPreview('documents/RPP%20Pemesinan%20Bubut%20Siklus%201.pdf', 'RPP Siklus 1 (Bubut)')" class="btn btn-outline btn-sm" style="width: 100%; text-align: left; display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 1rem;">
+                                    <span><i class="ph ph-file-pdf" style="margin-right: 0.5rem; font-size: 1.1rem; vertical-align: middle;"></i> Siklus 1 (Bubut)</span>
+                                    <i class="ph ph-eye" style="font-size: 1rem;"></i>
+                                </a>
+                                <a href="javascript:void(0)" onclick="openPdfPreview('documents/RPP%20Pemesinan%20Bubut%20Siklus%202.pdf', 'RPP Siklus 2 (Bubut)')" class="btn btn-outline btn-sm" style="width: 100%; text-align: left; display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 1rem;">
+                                    <span><i class="ph ph-file-pdf" style="margin-right: 0.5rem; font-size: 1.1rem; vertical-align: middle;"></i> Siklus 2 (Bubut)</span>
+                                    <i class="ph ph-eye" style="font-size: 1rem;"></i>
+                                </a>
+                                <a href="javascript:void(0)" onclick="openPdfPreview('documents/RPP%20Pemesinan%20Bubut%20Siklus%203.pdf', 'RPP Siklus 3 (Bubut)')" class="btn btn-outline btn-sm" style="width: 100%; text-align: left; display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 1rem;">
+                                    <span><i class="ph ph-file-pdf" style="margin-right: 0.5rem; font-size: 1.1rem; vertical-align: middle;"></i> Siklus 3 (Bubut)</span>
+                                    <i class="ph ph-eye" style="font-size: 1rem;"></i>
+                                </a>
+                            </div>
+                
                         </div>
+
                     </article>
 
                     <!-- Artefak 2 -->
@@ -125,6 +186,7 @@
                             <h3 class="project-title">Video Mengajar</h3>
                             <p class="project-desc">Rekaman visual praktik mengajar langsung yang menampilkan dinamika interaksi, pengelolaan kelas, dan penguasaan materi.</p>
                             <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
+
                         </div>
                     </article>
 
@@ -134,8 +196,9 @@
                             <i class="ph ph-notebook" style="font-size: 3.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
                             <h3 class="project-title">Bahan Ajar</h3>
                             <p class="project-desc">Materi pembelajaran komprehensif yang disusun untuk mendukung pemahaman teori dan praktik kejuruan siswa.</p>
-                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
-                        </div>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/Bahan%20Ajar%20Teknik%20Pemesinan%20Bubut.pdf', 'Bahan Ajar Teknik Pemesinan Bubut')" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Dokumen</a>
+
+</div>
                     </article>
 
                     <!-- Artefak 4 -->
@@ -144,8 +207,12 @@
                             <i class="ph ph-images" style="font-size: 3.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
                             <h3 class="project-title">Media Ajar</h3>
                             <p class="project-desc">Alat bantu visual, digital, atau fisik yang mempermudah demonstrasi dan pemahaman siswa terhadap materi kompleks.</p>
-                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/Jenis-Jenis Pahat Bubut dan Alat Bantu.pdf', 'Jenis-Jenis Pahat Bubut dan Alat Bantu')" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Jenis‑Jenis Pahat Bubut dan Alat Bantu</a>
+<a href="javascript:void(0)" onclick="openPdfPreview('documents/Parameter Pemotongan.pdf', 'Parameter Pemotongan')" class="btn btn-outline btn-sm" style="margin-top: 0.5rem; width: fit-content;"><i class="ph ph-eye"></i> Parameter Pemotongan</a>
+<a href="javascript:void(0)" onclick="openPdfPreview('documents/Pengeboran dan Bubut Dalam.pdf', 'Pengeboran dan Bubut Dalam')" class="btn btn-outline btn-sm" style="margin-top: 0.5rem; width: fit-content;"><i class="ph ph-eye"></i> Pengeboran dan Bubut Dalam</a>
+<a href="javascript:void(0)" onclick="openPdfPreview('documents/Pengenalan Mesin Bubut &amp; K3.pdf', 'Pengenalan Mesin Bubut &amp; K3')" class="btn btn-outline btn-sm" style="margin-top: 0.5rem; width: fit-content;"><i class="ph ph-eye"></i> Pengenalan Mesin Bubut &amp; K3</a>
                         </div>
+
                     </article>
 
                     <!-- Artefak 5 -->
@@ -153,9 +220,63 @@
                         <div class="project-info" style="padding: 0;">
                             <i class="ph ph-clipboard-text" style="font-size: 3.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
                             <h3 class="project-title">LKM (Lembar Kerja Murid)</h3>
-                            <p class="project-desc">Lembar panduan kerja terstruktur untuk melatih keterampilan psikomotorik dan penyelesaian masalah di bengkel.</p>
-                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
+                            <p class="project-desc">Lembar panduan kerja terstruktur Pemesinan Bubut yang dibagi menjadi 3 siklus pelaksanaan:</p>
+                            <div style="display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1.5rem; text-align: left;">
+                                <!-- Siklus 1 Group -->
+                                <div style="background: rgba(255, 255, 255, 0.02); padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--border-color);">
+                                    <div style="font-weight: 600; color: var(--text-main); font-size: 0.9rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
+                                        <i class="ph ph-folder-open" style="color: var(--primary-neon); font-size: 1.25rem;"></i> Siklus 1
+                                    </div>
+                                    <div style="display: flex; flex-direction: column; gap: 0.5rem; padding-left: 0.5rem;">
+                                        <a href="javascript:void(0)" onclick="openPdfPreview('documents/LKM%201.pdf', 'LKM 1')" style="font-size: 0.85rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; justify-content: space-between; padding: 0.3rem 0.5rem; border-radius: 4px; background: rgba(255,255,255,0.01); cursor:pointer;" onmouseover="this.style.color='var(--primary-neon)'; this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.color='var(--text-muted)'; this.style.background='rgba(255,255,255,0.01)'">
+                                            <span><i class="ph ph-file-pdf" style="color: var(--accent); margin-right: 0.3rem;"></i> LKM 1</span>
+                                            <i class="ph ph-eye" style="font-size: 0.8rem;"></i>
+                                        </a>
+                                        <a href="javascript:void(0)" onclick="openPdfPreview('documents/LKM%202.pdf', 'LKM 2')" style="font-size: 0.85rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; justify-content: space-between; padding: 0.3rem 0.5rem; border-radius: 4px; background: rgba(255,255,255,0.01); cursor:pointer;" onmouseover="this.style.color='var(--primary-neon)'; this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.color='var(--text-muted)'; this.style.background='rgba(255,255,255,0.01)'">
+                                            <span><i class="ph ph-file-pdf" style="color: var(--accent); margin-right: 0.3rem;"></i> LKM 2</span>
+                                            <i class="ph ph-eye" style="font-size: 0.8rem;"></i>
+                                        </a>
+                                        <a href="javascript:void(0)" onclick="openPdfPreview('documents/LKM%203.pdf', 'LKM 3')" style="font-size: 0.85rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; justify-content: space-between; padding: 0.3rem 0.5rem; border-radius: 4px; background: rgba(255,255,255,0.01); cursor:pointer;" onmouseover="this.style.color='var(--primary-neon)'; this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.color='var(--text-muted)'; this.style.background='rgba(255,255,255,0.01)'">
+                                            <span><i class="ph ph-file-pdf" style="color: var(--accent); margin-right: 0.3rem;"></i> LKM 3</span>
+                                            <i class="ph ph-eye" style="font-size: 0.8rem;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Siklus 2 Group -->
+                    <div style="background: rgba(255, 255, 255, 0.02); padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--border-color);">
+                        <div style="font-weight: 600; color: var(--text-main); font-size: 0.9rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="ph ph-folder-open" style="color: var(--primary-neon); font-size: 1.25rem;"></i> Siklus 2
                         </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem; padding-left: 0.5rem;">
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/LKM%204.pdf', 'LKM 4')" style="font-size: 0.85rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; justify-content: space-between; padding: 0.3rem 0.5rem; border-radius: 4px; background: rgba(255,255,255,0.01); cursor:pointer;" onmouseover="this.style.color='var(--primary-neon)'; this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.color='var(--text-muted)'; this.style.background='rgba(255,255,255,0.01)'">
+                                <span><i class="ph ph-file-pdf" style="color: var(--accent); margin-right: 0.3rem;"></i> LKM 4</span>
+                                <i class="ph ph-eye" style="font-size: 0.8rem;"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/LKM%205.pdf', 'LKM 5')" style="font-size: 0.85rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; justify-content: space-between; padding: 0.3rem 0.5rem; border-radius: 4px; background: rgba(255,255,255,0.01); cursor:pointer;" onmouseover="this.style.color='var(--primary-neon)'; this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.color='var(--text-muted)'; this.style.background='rgba(255,255,255,0.01)'">
+                                <span><i class="ph ph-file-pdf" style="color: var(--accent); margin-right: 0.3rem;"></i> LKM 5</span>
+                                <i class="ph ph-eye" style="font-size: 0.8rem;"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/LKM%206.pdf', 'LKM 6')" style="font-size: 0.85rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; justify-content: space-between; padding: 0.3rem 0.5rem; border-radius: 4px; background: rgba(255,255,255,0.01); cursor:pointer;" onmouseover="this.style.color='var(--primary-neon)'; this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.color='var(--text-muted)'; this.style.background='rgba(255,255,255,0.01)'">
+                                <span><i class="ph ph-file-pdf" style="color: var(--accent); margin-right: 0.3rem;"></i> LKM 6</span>
+                                <i class="ph ph-eye" style="font-size: 0.8rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+<!-- Siklus 3 Group -->
+                    <div style="background: rgba(255, 255, 255, 0.02); padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--border-color);">
+                        <div style="font-weight: 600; color: var(--text-main); font-size: 0.9rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="ph ph-folder-open" style="color: var(--primary-neon); font-size: 1.25rem;"></i> Siklus 3
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem; padding-left: 0.5rem;">
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/LKM%207.pdf', 'LKM 7')" style="font-size: 0.85rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; justify-content: space-between; padding: 0.3rem 0.5rem; border-radius: 4px; background: rgba(255,255,255,0.01); cursor:pointer;" onmouseover="this.style.color='var(--primary-neon)'; this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.color='var(--text-muted)'; this.style.background='rgba(255,255,255,0.01)'"><span><i class="ph ph-file-pdf" style="color: var(--accent); margin-right: 0.3rem;"></i> LKM 7</span><i class="ph ph-eye" style="font-size: 0.8rem;"></i></a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScCsHWtR5cEx8jP6Ig3woL7ThGWvCguSztTvJSefd_30vXJjw/viewform?usp=sharing&ouid=117593595133287069303" target="_blank" style="font-size: 0.85rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; justify-content: space-between; padding: 0.3rem 0.5rem; border-radius: 4px; background: rgba(255,255,255,0.01);" onmouseover="this.style.color='var(--primary-neon)'; this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.color='var(--text-muted)'; this.style.background='rgba(255,255,255,0.01)'"><span><i class="ph ph-link" style="color: var(--accent); margin-right: 0.3rem;"></i> Form LKM 8</span><i class="ph ph-arrow-square-out" style="font-size: 0.8rem;"></i></a>
+                        </div>
+                    </div>
+                            </div>
+                        </div>
+
                     </article>
 
                     <!-- Artefak 6 -->
@@ -164,8 +285,16 @@
                             <i class="ph ph-list-checks" style="font-size: 3.5rem; color: var(--accent); margin-bottom: 1rem;"></i>
                             <h3 class="project-title">Lembar Penilaian</h3>
                             <p class="project-desc">Instrumen evaluasi dan rubrik objektif untuk mengukur kompetensi praktik dan pencapaian target pembelajaran.</p>
-                            <a href="#" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lihat Detail</a>
-                        </div>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/lembar penilaian LKM 1.pdf', 'Lembar Penilaian 1')" class="btn btn-outline btn-sm" style="margin-top: 1.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lembar Penilaian 1</a>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/lembar penilaian LKM 2.pdf', 'Lembar Penilaian 2')" class="btn btn-outline btn-sm" style="margin-top: 0.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lembar Penilaian 2</a>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/lembar penilaian LKM 3.pdf', 'Lembar Penilaian 3')" class="btn btn-outline btn-sm" style="margin-top: 0.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lembar Penilaian 3</a>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/lembar penilaian LKM 4.pdf', 'Lembar Penilaian 4')" class="btn btn-outline btn-sm" style="margin-top: 0.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lembar Penilaian 4</a>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/lembar penilaian LKM 5.pdf', 'Lembar Penilaian 5')" class="btn btn-outline btn-sm" style="margin-top: 0.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lembar Penilaian 5</a>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/lembar penilaian LKM 6.pdf', 'Lembar Penilaian 6')" class="btn btn-outline btn-sm" style="margin-top: 0.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lembar Penilaian 6</a>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/lembar penilaian LKM 7.pdf', 'Lembar Penilaian 7')" class="btn btn-outline btn-sm" style="margin-top: 0.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lembar Penilaian 7</a>
+                            <a href="javascript:void(0)" onclick="openPdfPreview('documents/lembar penilaian LKM 8.pdf', 'Lembar Penilaian 8')" class="btn btn-outline btn-sm" style="margin-top: 0.5rem; width: fit-content;"><i class="ph ph-eye"></i> Lembar Penilaian 8</a>
+
+</div>
                     </article>
                 </div>
             </div>
@@ -186,7 +315,10 @@
                         <div class="project-info" style="padding: 0;">
                             <i class="ph ph-warning-circle" style="font-size: 3.5rem; color: #f59e0b; margin-bottom: 1rem;"></i>
                             <h3 class="project-title">Kendala Penyusunan</h3>
-                            <p class="project-desc">Selama proses penyusunan produk pembelajaran, kendala utama yang saya hadapi meliputi <strong>[contoh: penyesuaian alokasi waktu dengan keluasan materi, perumusan indikator yang selaras, atau mencari media interaktif]</strong>. Tantangan ini menuntut saya untuk lebih kreatif dalam merancang aktivitas.</p>
+                            <p class="project-desc">Dalam menyusun RPP berdasarkan kondisi nyata di lapangan, ada beberapa kendala yang dihadapi, yaitu:</p>
+<p class="project-desc"><strong>Pengaturan waktu praktik karena jumlah mesin terbatas</strong><br>Di bengkel hanya tersedia 5 mesin bubut untuk 24 siswa, sehingga siswa harus bergantian menggunakan mesin. Tantangan terbesar adalah mengatur kegiatan belajar agar siswa yang sedang menunggu giliran tetap aktif dan produktif. Guru harus menyiapkan kegiatan lain supaya semua siswa tetap belajar selama praktik berlangsung.</p>
+<p class="project-desc"><strong>Membuat pembelajaran yang tidak menakutkan bagi siswa</strong><br>Banyak siswa menganggap pemesinan bubut itu sulit sehingga kurang percaya diri dan motivasinya menurun. Karena itu, guru perlu membuat LKM dan pertanyaan pemantik yang sederhana, menarik, dan mudah dipahami agar siswa lebih penasaran dan semangat belajar.</p>
+<p class="project-desc"><strong>Menyesuaikan target pembelajaran dengan keterbatasan alat</strong><br>Materi pembelajaran menuntut siswa menguasai keterampilan pembubutan yang cukup kompleks. Namun, waktu praktik dan jumlah alat terbatas, sehingga guru harus pandai mengatur jadwal dan proyek praktik agar semua siswa tetap bisa mencapai tujuan pembelajaran.</p>
                         </div>
                     </article>
 
@@ -195,7 +327,17 @@
                         <div class="project-info" style="padding: 0;">
                             <i class="ph ph-gear" style="font-size: 3.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
                             <h3 class="project-title">Teori/Konsep Pedagogi</h3>
-                            <p class="project-desc">Saya mengadopsi teori <strong>[contoh: Konstruktivisme Vygotsky / Problem-Based Learning]</strong>. Konsep ini memfasilitasi siswa untuk membangun pengetahuan sendiri melalui kolaborasi dan pemecahan masalah kontekstual yang relevan dengan kehidupan.</p>
+                            <p class="project-desc">Konsep pembelajaran yang digunakan dalam RPP menggabungkan beberapa pendekatan agar pembelajaran tetap menarik meskipun fasilitas terbatas.</p>
+<p class="project-desc"><strong>Pendekatan Deep Learning</strong></p>
+<p class="project-desc">Berkesadaran: Guru memulai pembelajaran dengan memastikan kondisi dan kesiapan siswa terlebih dahulu.</p>
+<p class="project-desc">Bermakna: Materi dikaitkan langsung dengan kebutuhan dunia kerja sehingga siswa memahami manfaat dari pembelajaran tersebut.</p>
+<p class="project-desc">Menggembirakan: Pembelajaran dibuat lebih santai dan menyenangkan melalui diskusi kelompok dan kerja sama antar siswa.</p>
+<p class="project-desc"><strong>Sistem Among Ki Hadjar Dewantara</strong></p>
+<p class="project-desc">Ing Ngarsa Sung Tuladha: Guru memberikan contoh cara kerja, sikap disiplin, dan keselamatan kerja.</p>
+<p class="project-desc">Ing Madya Mangun Karsa: Guru mendampingi siswa selama proses praktik dan diskusi kelompok.</p>
+<p class="project-desc">Tut Wuri Handayani: Guru memberi kesempatan siswa untuk bekerja mandiri, mengecek hasil kerja, dan mempresentasikan hasil praktiknya.</p>
+<p class="project-desc"><strong>Model Problem Based Learning dan Project Based Learning</strong></p>
+<p class="project-desc">Pembelajaran dimulai dengan pemberian masalah yang sering ditemukan di dunia industri. Setelah itu siswa bekerja secara kelompok untuk menyelesaikan proyek praktik yang diberikan. Guru berperan sebagai pendamping dan fasilitator selama proses pembelajaran.</p>
                         </div>
                     </article>
 
@@ -204,7 +346,10 @@
                         <div class="project-info" style="padding: 0;">
                             <i class="ph ph-target" style="font-size: 3.5rem; color: #10b981; margin-bottom: 1rem;"></i>
                             <h3 class="project-title">Faktor Keberhasilan</h3>
-                            <p class="project-desc">Keberhasilan penerapan produk pembelajaran didukung oleh: <strong>[contoh: relevansi LKPD dengan minat siswa, kejelasan instruksi, media visual yang menarik, dan antusiasme siswa dalam diskusi kelompok]</strong>.</p>
+                            <p class="project-desc">Agar pembelajaran tetap berjalan efektif meskipun jumlah mesin terbatas, beberapa strategi yang digunakan adalah:</p>
+<p class="project-desc"><strong>Pembagian kelompok dan tugas</strong><br>Pada pembelajaran teori, siswa dibagi menjadi kelompok kecil. Saat praktik, siswa bekerja berpasangan dalam satu mesin. Satu siswa menjadi operator mesin dan siswa lainnya mengawasi keselamatan kerja serta mencatat proses pengerjaan. Setelah itu peran ditukar agar semua siswa mendapatkan pengalaman yang sama.</p>
+<p class="project-desc"><strong>Menerapkan budaya kerja industri</strong><br>Siswa dilatih disiplin dan bertanggung jawab seperti di dunia kerja. Sebelum praktik, siswa harus menyiapkan langkah kerja dengan baik agar waktu penggunaan mesin lebih efektif.</p>
+<p class="project-desc"><strong>Pemanfaatan LKM secara maksimal</strong><br>Saat menunggu giliran praktik, siswa tetap belajar melalui LKM, seperti menganalisis parameter pemotongan, membaca gambar kerja, atau mencari informasi tambahan dari buku dan internet.</p>
                         </div>
                     </article>
 
@@ -213,7 +358,10 @@
                         <div class="project-info" style="padding: 0;">
                             <i class="ph ph-arrows-clockwise" style="font-size: 3.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
                             <h3 class="project-title">Adaptasi Situasi Kelas</h3>
-                            <p class="project-desc">Jika diterapkan pada situasi kelas berbeda, komponen yang perlu diubah adalah <strong>[contoh: metode asesmen yang lebih variatif, penyederhanaan media digital menjadi konvensional, atau modifikasi kesulitan tugas]</strong>.</p>
+                            <p class="project-desc">Jika pembelajaran diterapkan pada kelas dengan kondisi berbeda, beberapa penyesuaian yang perlu dilakukan adalah:</p>
+<p class="project-desc"><strong>Jika jumlah mesin lebih sedikit atau jumlah siswa lebih banyak</strong><br>Guru dapat memperbesar jumlah anggota kelompok dan menggunakan media tambahan seperti video atau simulator mesin bubut sebelum siswa praktik langsung di bengkel.</p>
+<p class="project-desc"><strong>Jika kemampuan awal siswa masih rendah</strong><br>Guru perlu memberikan proyek yang lebih sederhana, memperbanyak demonstrasi, dan melibatkan teman sebaya untuk membantu siswa lain yang masih kesulitan.</p>
+<p class="project-desc"><strong>Jika kebutuhan industri berbeda</strong><br>Produk atau tugas praktik dapat disesuaikan dengan kebutuhan industri sekitar, tetapi tetap mengikuti kompetensi dasar yang ada di kurikulum.</p>
                         </div>
                     </article>
                 </div>
@@ -262,6 +410,18 @@
                         <p>Menguasai materi pembelajaran mendalam dan mengaplikasikan model pembelajaran inovatif yang mengintegrasikan TPACK (Technological Pedagogical Content Knowledge).</p>
                     </div>
 
+                    <!-- Keahlian & Kompetensi Teknik -->
+                    <div class="skill-card glass-card">
+                        <i class="ph ph-wrench skill-icon" style="color: var(--primary-neon);"></i>
+                        <h3>Kompetensi Teknik & Kejuruan</h3>
+                        <p style="margin-bottom: 1rem;">Memiliki penguasaan kompetensi profesional dan kejuruan khusus di bidang Teknik Mesin:</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span style="background: rgba(239, 108, 0, 0.1); color: var(--primary-neon); padding: 0.35rem 0.75rem; border-radius: 4px; font-size: 0.75rem; border: 1px solid rgba(239, 108, 0, 0.25); font-weight: 500;">Teknik Pengelasan (Welding)</span>
+                            <span style="background: rgba(239, 108, 0, 0.1); color: var(--primary-neon); padding: 0.35rem 0.75rem; border-radius: 4px; font-size: 0.75rem; border: 1px solid rgba(239, 108, 0, 0.25); font-weight: 500;">Manufaktur & Permesinan</span>
+                            <span style="background: rgba(239, 108, 0, 0.1); color: var(--primary-neon); padding: 0.35rem 0.75rem; border-radius: 4px; font-size: 0.75rem; border: 1px solid rgba(239, 108, 0, 0.25); font-weight: 500;">Desain CAD / 3D Modeling</span>
+                        </div>
+                    </div>
+
                     <!-- Karakter 1 -->
                     <div class="skill-card glass-card">
                         <i class="ph ph-handshake skill-icon" style="color: #ec4899;"></i>
@@ -279,6 +439,39 @@
             </div>
         </section>
 
+        <!-- Kontak -->
+        <section id="kontak" class="section bg-secondary">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Hubungi Saya</h2>
+                    <div class="section-line"></div>
+                    <p style="margin-top: 1.5rem; color: var(--text-muted); max-width: 700px; margin-left: auto; margin-right: auto;">Mari berdiskusi lebih lanjut mengenai pendidikan, inovasi, atau kolaborasi.</p>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto;">
+                    <div class="glass-card" style="padding: 3rem; text-align: center; border-top: 4px solid var(--primary);">
+                        <i class="ph ph-envelope-simple" style="font-size: 4rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Email</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">fajarafri235@gmail.com</p>
+                        <a href="mailto:fajarafri235@gmail.com" class="btn btn-primary">Kirim Pesan</a>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div class="glass-card" style="padding: 2rem; text-align: center;">
+                            <i class="ph ph-whatsapp-logo" style="font-size: 2.5rem; color: #10b981; margin-bottom: 1rem;"></i>
+                            <h4>WhatsApp</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">085842004081</p>
+                        </div>
+                        <div class="glass-card" style="padding: 2rem; text-align: center;">
+                            <i class="ph ph-map-pin" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                            <h4>Lokasi</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Bantul, D.I. Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -289,6 +482,59 @@
             <p class="copyright">&copy; <span id="year"></span> E-Portfolio Mahasiswa PPG. All rights reserved.</p>
         </div>
     </footer>
+    <!-- PDF Preview + Analysis Modal -->
+    <div id="pdf-preview-modal" style="display:none; position:fixed; inset:0; background:rgba(9,10,15,0.85); backdrop-filter:blur(12px); z-index:2000; padding:1.5rem; align-items:center; justify-content:center;">
+        <div style="max-width:1000px; width:100%; height:90vh; display:flex; flex-direction:column; gap:1rem;">
+            <!-- Modal Header -->
+            <div style="display:flex; align-items:center; justify-content:space-between; flex-shrink:0;">
+                <h3 id="pdf-modal-title" style="margin:0; font-family:var(--font-cyber); color:var(--primary-neon); font-size:1.2rem; display:flex; align-items:center; gap:0.5rem; text-shadow:0 0 10px var(--primary-glow);">
+                    <i class="ph ph-file-pdf" style="font-size:1.5rem;"></i>
+                    <span>Dokumen</span>
+                </h3>
+                <div style="display:flex; align-items:center; gap:0.75rem;">
+                    <a id="pdf-open-btn" href="" target="_blank" class="btn btn-outline btn-sm" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; font-size:0.85rem; border-color:var(--secondary-neon); color:var(--secondary-neon); text-transform:none; letter-spacing:0.5px; border-radius:4px; box-shadow:none;">
+                        <i class="ph ph-arrow-square-out"></i> Buka Penuh
+                    </a>
+                    <a id="pdf-download-btn" href="" download class="btn btn-primary btn-sm" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; font-size:0.85rem; text-transform:none; letter-spacing:0.5px; border-radius:4px; box-shadow:none;">
+                        <i class="ph ph-download-simple"></i> Unduh
+                    </a>
+                    <button id="pdf-modal-close" style="background:rgba(255,255,255,0.05); border:1px solid var(--border-color); color:var(--text-main); width:36px; height:36px; border-radius:8px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all 0.3s ease; font-size:1.1rem;" onmouseover="this.style.background='rgba(239,68,68,0.2)'; this.style.borderColor='#ef4444'; this.style.color='#ef4444';" onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.borderColor='var(--border-color)'; this.style.color='var(--text-main)';">
+                        <i class="ph ph-x"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- PDF Preview Area -->
+            <div class="glass-card" style="flex:1; min-height:0; padding:0; overflow:hidden; border:1px solid var(--border-color); border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+                <iframe id="pdf-iframe" src="" style="width:100%; height:100%; border:none; background:#090a0f;"></iframe>
+            </div>
+
+            <!-- Analysis Section (collapsible) -->
+            <div class="glass-card" style="flex-shrink:0; padding:1.25rem; border:1px solid var(--border-color); border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+                <div id="analysis-toggle" style="display:flex; align-items:center; justify-content:space-between; cursor:pointer; user-select:none;" onclick="toggleAnalysisPanel()">
+                    <h4 style="margin:0; color:var(--text-main); font-size:0.95rem; display:flex; align-items:center; gap:0.5rem; font-family:var(--font-cyber);">
+                        <i class="ph ph-note-pencil" style="color:var(--secondary-neon); font-size:1.2rem;"></i>
+                        Analisis Artefak
+                    </h4>
+                    <i id="analysis-chevron" class="ph ph-caret-down" style="color:var(--text-muted); transition:transform 0.3s ease; font-size:1.2rem;"></i>
+                </div>
+                <div id="analysis-panel" style="max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+                    <textarea id="pdf-analysis-text" rows="5" readonly style="width:100%; margin-top:1rem; padding:0.75rem; border:1px solid var(--border-color); border-radius:8px; background:rgba(255,255,255,0.03); color:var(--text-main); font-family:var(--font-sans); font-size:0.9rem; resize:vertical; outline:none; transition:border-color 0.3s ease; cursor:default; line-height:1.6;" placeholder="Belum ada analisis untuk dokumen ini."></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analysis-only Modal (for non-PDF artefacts) -->
+    <div id="analysis-modal" class="modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); backdrop-filter:blur(5px); align-items:center; justify-content:center; z-index:1000;">
+        <div class="glass-card" style="padding:2rem; max-width:500px; width:90%;">
+            <h3 id="modal-title" style="margin-top:0;">Analisis Artefak</h3>
+            <textarea id="analysis-text" rows="6" readonly style="width:100%; margin-top:1rem; padding:0.5rem; border:1px solid var(--border-color); background:rgba(255,255,255,0.05); color:var(--text-main); cursor:default;" placeholder="Belum ada analisis."></textarea>
+            <div style="margin-top:1rem; text-align:right;">
+                <button id="close-modal" class="btn btn-outline" style="margin-right:0.5rem;">Tutup</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
