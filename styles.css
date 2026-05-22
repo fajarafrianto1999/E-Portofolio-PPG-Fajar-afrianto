@@ -1004,27 +1004,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform var(--transition-slow);
-}
-
-.doc-card:hover .doc-img {
-    transform: scale(1.08);
-}
-
-.doc-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(9, 10, 15, 0.6);
-    backdrop-filter: blur(3px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity var(--transition-normal);
-}
-
-.doc-card:hover .doc-overlay {
-    opacity: 1;
 }
 
 /* Slide Navigation Button Controls */
