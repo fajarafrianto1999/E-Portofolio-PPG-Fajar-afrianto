@@ -83,14 +83,263 @@ Membantu siswa memahami dasar-dasar pemesinan bubut, baik teori maupun praktik, 
 
 4. Kekurangan
 - Kurang visual dan animasi: Karena berbentuk modul teks, beberapa materi seperti sudut pahat dan proses pembuatan ulir cukup sulit dipahami tanpa bantuan video atau simulasi.
-- Belum menyesuaikan perbedaan kemampuan siswa: Materi dibuat dengan urutan yang sama untuk semua siswa, sehingga siswa yang belajar lebih lambat mungkin membutuhkan pendampingan tambahan.`
+- Belum menyesuaikan perbedaan kemampuan siswa: Materi dibuat dengan urutan yang sama untuk semua siswa, sehingga siswa yang belajar lebih lambat mungkin membutuhkan pendampingan tambahan.`,
+
+    'analysis-lkm-1': `Konteks
+LKM ini digunakan pada awal pembelajaran teori sebelum siswa masuk ke bengkel praktik. Isi LKM berupa kasus tentang pelanggaran keselamatan kerja (K3), seperti benda kerja yang longgar pada chuck dan serpihan logam yang berserakan di area bengkel.
+
+Tujuan
+- Membantu siswa mengenali pelanggaran K3 di bengkel.
+- Melatih siswa memahami penyebab dan dampak kecelakaan kerja.
+- Membimbing siswa mencari solusi agar keselamatan kerja lebih terjaga.
+
+Kelebihan
+- Kasus yang digunakan sesuai dengan kondisi nyata di bengkel.
+- Membuat siswa lebih sadar pentingnya keselamatan kerja sebelum praktik langsung.
+
+Kekurangan
+- Penilaian masih berfokus pada hasil diskusi kelompok sehingga keaktifan setiap siswa belum terlihat jelas.`,
+
+    'analysis-lkm-2': `Konteks
+LKM ini berupa gambar kerja untuk membuat poros eksentrik pada praktik pembubutan.
+
+Tujuan
+- Membantu siswa membaca gambar teknik.
+- Melatih siswa menentukan titik eksentrik dan melakukan pembubutan dengan tepat.
+- Membimbing siswa menghasilkan benda kerja yang presisi.
+
+Kelebihan
+- Gambar kerja sudah sesuai standar industri.
+- Ukuran dan toleransi ditulis dengan jelas sehingga siswa lebih mudah mengikuti langkah kerja.
+
+Kekurangan
+- Gambar masih berbentuk 2 dimensi sehingga beberapa siswa sulit membayangkan bentuk aslinya.`,
+
+    'analysis-lkm-3': `Konteks
+LKM ini digunakan untuk membuat komponen Flywheel Puller pada praktik pembubutan.
+
+Tujuan
+- Membimbing siswa membuat pembubutan bertingkat dan ulir.
+- Melatih siswa menghasilkan ukuran benda kerja yang sesuai gambar teknik.
+
+Kelebihan
+- Produk yang dibuat memiliki fungsi nyata di bengkel otomotif.
+- Siswa belajar membuat alat yang berguna untuk dunia kerja.
+
+Kekurangan
+- Tingkat kesulitan cukup tinggi karena menggabungkan beberapa teknik pembubutan sekaligus.
+- Risiko kesalahan kerja masih cukup besar jika siswa kurang teliti.`,
+
+    'analysis-lkm-4': `Konteks
+LKM ini digunakan untuk diskusi kelompok tentang masalah hasil bubut yang kasar, pahat cepat aus, dan kesalahan pemilihan alat bantu.
+
+Tujuan
+- Membantu siswa memahami jenis pahat bubut dan alat bantu mesin.
+- Melatih siswa mencari solusi dari masalah yang terjadi saat proses pembubutan.
+
+Kelebihan
+- Melatih kemampuan berpikir kritis siswa.
+- Siswa belajar menganalisis penyebab masalah dan menentukan solusi yang tepat.
+
+Kekurangan
+- Tidak ada gambar kerusakan pahat sehingga siswa hanya memahami dari teori saja.`,
+
+    'analysis-lkm-5': `Konteks
+LKM ini berupa gambar kerja untuk membuat baut atau batang penekan pada proyek Flywheel Puller.
+
+Tujuan
+- Membimbing siswa melakukan pembubutan rata, tirus, radius, dan ulir luar.
+- Melatih siswa menghasilkan benda kerja dengan ukuran yang presisi.
+
+Kelebihan
+- Ukuran kerja dibuat sangat detail sehingga melatih ketelitian siswa.
+- Membantu siswa meningkatkan keterampilan saat mengoperasikan mesin bubut.
+
+Kekurangan
+- Tidak ada batas waktu pengerjaan sehingga siswa kurang terlatih dalam manajemen waktu kerja.`,
+
+    'analysis-lkm-6': `Konteks
+LKM ini berupa studi kasus tentang kegagalan proses pembubutan pada produksi poros baja di industri.
+
+Tujuan
+- Melatih siswa menghitung parameter pemotongan.
+- Membantu siswa mencari penyebab getaran mesin dan keausan pahat.
+- Membimbing siswa menentukan parameter pembubutan yang lebih tepat.
+
+Kelebihan
+- Menghubungkan perhitungan teori dengan masalah nyata di industri.
+- Melatih kemampuan analisis teknik siswa.
+
+Kekurangan
+- Banyak perhitungan angka sehingga siswa yang kurang kuat dalam matematika bisa merasa kesulitan.`,
+
+    'analysis-lkm-7': `Konteks
+LKM ini digunakan untuk proyek akhir pembuatan Arbor Shaft dengan tingkat ketelitian tinggi.
+
+Tujuan
+- Membimbing siswa melakukan pembubutan presisi.
+- Melatih siswa membaca toleransi dan membuat ulir luar.
+- Membantu siswa melakukan pengecekan hasil pemasangan komponen.
+
+Kelebihan
+- Standar pengerjaan sudah mendekati standar industri sebenarnya.
+- Melatih ketelitian dan kualitas kerja siswa.
+
+Kekurangan
+- Ada beberapa bagian langkah kerja yang perlu penjelasan tambahan dari guru agar siswa tidak bingung saat praktik.`,
+
+    'analysis-lembar-penilaian-1': `Konteks
+Digunakan untuk menilai hasil diskusi dan presentasi kelompok tentang kasus pelanggaran K3 pada Siklus 1.
+
+Tujuan
+Menilai kemampuan murid dalam memahami materi K3, cara menyampaikan hasil diskusi, kerja sama kelompok, ketepatan jawaban, rasa percaya diri, dan kedisiplinan saat presentasi.
+
+Kelebihan
+Rubrik penilaian sudah jelas dengan skala nilai 1–4, sehingga penilaian sikap dan kemampuan komunikasi kelompok lebih terarah.
+
+Kekurangan
+Penilaian masih berfokus pada hasil kelompok, sehingga guru cukup sulit mengetahui kontribusi dan pemahaman masing-masing anggota secara individu.`,
+
+    'analysis-lembar-penilaian-2': `Konteks
+Digunakan sebagai lembar penilaian praktik individu pada pengerjaan produk Poros Eksentrik di Siklus 1.
+
+Tujuan
+Menilai keterampilan praktik murid berdasarkan ketepatan ukuran, toleransi ISO, kehalusan permukaan, dan hasil finishing produk.
+
+Kelebihan
+Penilaian cukup objektif karena dibagi menjadi nilai objektif (75%) dari hasil pengukuran dan nilai subjektif (25%) dari kualitas pengerjaan. Selain itu, waktu pengerjaan juga dicatat untuk melihat efisiensi kerja murid.
+
+Kekurangan
+Belum ada kolom khusus untuk mencatat langkah perbaikan atau cara murid mengatasi kesalahan saat proses pembubutan berlangsung.`,
+
+    'analysis-lembar-penilaian-3': `Konteks
+Digunakan untuk menilai hasil praktik individu pada pengerjaan komponen Flywheel Puller 1 di akhir Siklus 1 menuju Siklus 2.
+
+Tujuan
+Menilai kemampuan murid dalam pengerjaan bubut yang lebih kompleks, seperti ketepatan sudut, diameter bertingkat, ulir, dan kualitas permukaan benda kerja.
+
+Kelebihan
+Penilaian sangat lengkap karena mencakup pemeriksaan ulir dalam dan luar secara detail. Terdapat juga kolom perbandingan hasil ukur murid dan guru untuk melatih kejujuran murid dalam evaluasi diri.
+
+Kekurangan
+Item penilaian cukup banyak sehingga guru membutuhkan waktu lebih lama saat melakukan pengecekan hasil kerja murid di bengkel.`,
+
+    'analysis-lembar-penilaian-4': `Konteks
+Digunakan untuk menilai hasil diskusi kelompok mengenai kasus pemilihan pahat dan alat bantu pada Siklus 2.
+
+Tujuan
+Menilai kemampuan kerja sama, pemahaman materi alat potong, kemampuan memberikan solusi, dan kedisiplinan murid saat presentasi.
+
+Kelebihan
+Rubrik penilaian membantu mendorong tanggung jawab kelompok karena menilai kejelasan penyampaian dan ketepatan jawaban.
+
+Kekurangan
+Format penilaiannya masih hampir sama dengan LKM 1 dan belum memiliki indikator khusus yang lebih mendalam terkait materi alat potong.`,
+
+    'analysis-lembar-penilaian-5': `Konteks
+Digunakan untuk menilai hasil praktik individu pada pengerjaan Baut Flywheel Puller di Siklus 2.
+
+Tujuan
+Menilai kemampuan murid dalam pembubutan memanjang, pembuatan alur, tirus, ulir baut, dan kepala segi enam.
+
+Kelebihan
+Penilaian sudah mencakup berbagai bentuk pengerjaan mekanis sehingga dapat menggambarkan kemampuan murid dalam membuat produk dengan bentuk yang beragam.
+
+Kekurangan
+Belum ada aturan pengurangan nilai yang jelas terkait keterlambatan waktu pengerjaan, sehingga penilaian bisa menjadi subjektif.`,
+
+    'analysis-lembar-penilaian-6': `Konteks
+Digunakan untuk menilai presentasi kelompok tentang analisis parameter pemotongan pada Siklus 3.
+
+Tujuan
+Menilai pemahaman konsep parameter pemotongan, ketepatan perhitungan, kemampuan analisis masalah, dan solusi yang diberikan murid.
+
+Kelebihan
+Rubrik penilaian lebih detail dan spesifik dibandingkan LKM sebelumnya, sehingga penilaian menjadi lebih jelas, transparan, dan sesuai dengan materi yang dipelajari.
+
+Kekurangan
+Penilaian masih berfokus pada hasil presentasi kelompok dan belum melibatkan penilaian antar teman untuk melihat keaktifan masing-masing anggota kelompok.`,
+
+    'analysis-lembar-penilaian-7': `Konteks
+Digunakan untuk menilai hasil proyek akhir individu berupa pengerjaan komponen Arbor Shaft pada Siklus 3.
+
+Tujuan
+Menguji kemampuan murid dalam menghasilkan produk dengan tingkat presisi tinggi, seperti toleransi ISO, pembubutan dalam, dan pembuatan ulir luar.
+
+Kelebihan
+Standar penilaiannya sudah mendekati standar industri karena menilai ketelitian ukuran dan kualitas permukaan produk secara detail.
+
+Kekurangan
+Proses pengerjaannya cukup rumit dan belum terdapat petunjuk khusus terkait aspek keselamatan kerja, sehingga fokus murid bisa hanya pada hasil ukuran produk saja.`,
+
+    'analysis-lembar-penilaian-8': `Konteks
+Digunakan sebagai penilaian kognitif individu berbasis digital menggunakan Google Forms pada akhir pembelajaran.
+
+Tujuan
+Mengukur pemahaman murid tentang materi pengeboran, mata bor, getaran pada bubut dalam, dan solusi pemesinan presisi.
+
+Kelebihan
+Penilaian lebih modern, praktis, dan efisien karena koreksi soal pilihan ganda dapat dilakukan otomatis. Rubrik penilaian soal uraian juga sudah jelas.
+
+Kekurangan
+Karena dikerjakan secara digital, masih ada kemungkinan murid mencari jawaban di internet atau bekerja sama dengan teman jika pengawasan kurang maksimal.`,
+
+    'analysis-parameter-pemotongan': `Konteks
+Media ini digunakan sebagai pembelajaran teori sebelum murid melakukan proses pemesinan secara langsung di bengkel. Materi membantu murid memahami perhitungan dasar dalam proses penyayatan logam dan melatih kemampuan berpikir logis serta perhitungan matematis.
+
+Tujuan
+- Membimbing murid dalam menghitung parameter pemotongan seperti kecepatan potong (Vc), putaran spindel (n), gerak makan (feed), dan kedalaman potong.
+- Membantu murid memahami pengaruh kesalahan pemilihan parameter terhadap umur pahat dan kualitas hasil benda kerja.
+
+Kelebihan
+Media ini mampu menjelaskan hubungan antar parameter pemotongan dengan jelas. Selain itu, materi juga dikaitkan dengan kondisi nyata di bengkel, seperti pengaruh mesin yang sudah aus dan penggunaan coolant terhadap hasil pemesinan.
+
+Kekurangan
+Materi masih banyak berisi rumus dan perhitungan matematika. Kurangnya variasi contoh soal yang dekat dengan praktik bengkel membuat beberapa murid yang kurang kuat di perhitungan merasa kesulitan dan cepat bosan dalam memahami materi.`,
+
+    'analysis-pengeboran-dan-bubut-dalam': `Konteks
+Media ini digunakan sebagai panduan praktik lanjutan dalam proses pengeboran dan bubut dalam pada mesin bubut. Media berfungsi sebagai pedoman langkah kerja atau SOP di bengkel.
+
+Tujuan
+- Memberikan panduan langkah kerja pengeboran dan bubut dalam secara runtut mulai dari persiapan hingga pengecekan hasil ukuran.
+- Membantu murid memahami perbedaan proses pengeboran (drilling) dan bubut dalam (boring).
+
+Kelebihan
+Penyajian materi dibuat seperti panduan kerja industri sehingga lebih mudah diterapkan saat praktik. Adanya petunjuk penggunaan alat dan instruksi penting membuat murid lebih disiplin dan teliti saat bekerja di bengkel.
+
+Kekurangan
+Walaupun langkah kerja sudah dijelaskan secara urut, media belum dilengkapi gambar atau ilustrasi arah gerakan pahat bubut dalam. Hal ini dapat membuat murid kesulitan membayangkan posisi gerakan pahat dan eretan saat praktik berlangsung.`,
+
+    'analysis-pengenalan-mesin-bubut-&-k3': `Konteks
+Media ini digunakan sebagai materi awal pembelajaran pemesinan bubut konvensional untuk kelas XI SMK. Materi diberikan sebelum murid masuk dan praktik langsung di bengkel.
+
+Tujuan
+- Mengenalkan cara kerja dasar mesin bubut dan bagian-bagian utamanya seperti headstock, tailstock, carriage, dan bed.
+- Menanamkan budaya keselamatan kerja melalui pemahaman K3 dan penggunaan APD di bengkel.
+
+Kelebihan
+Materi disusun dengan rapi dan menggunakan bahasa yang mudah dipahami. Penjelasan tentang aturan keselamatan kerja juga cukup jelas, seperti larangan memakai aksesori saat praktik, sehingga penting untuk mencegah kecelakaan kerja pada murid pemula.
+
+Kekurangan
+Penjelasan bagian mesin masih banyak berbentuk teks. Media ini akan lebih menarik dan mudah dipahami jika ditambahkan gambar atau diagram mesin bubut lengkap beserta penunjuk nama komponennya.`,
+
+    'analysis-jenis-jenis-pahat-bubut-dan-alat-bantu': `Konteks
+Media ini digunakan setelah murid memahami bagian-bagian mesin bubut. Materi berfokus pada pengenalan jenis pahat dan alat bantu yang digunakan dalam proses pembubutan.
+
+Tujuan
+- Membantu murid memahami fungsi berbagai jenis pahat seperti pahat rata, pahat muka, pahat ulir, pahat alur, dan pahat potong.
+- Menjelaskan perbedaan bahan pahat HSS dan karbida serta bentuk sudut mata potongnya.
+
+Kelebihan
+Penyajian materi cukup menarik dan runtut karena dibagi berdasarkan tahapan kerja. Adanya tabel perbandingan HSS dan karbida juga membantu murid memahami penggunaan pahat dalam dunia industri.
+
+Kekurangan
+Penjelasan bentuk insert karbida seperti rhombic, triangular, square, dan round masih berupa teks. Akan lebih baik jika ditambahkan gambar bentuk insert agar murid lebih mudah mengenali bentuk aslinya saat praktik di bengkel.`
 };
 
-// Seed default data if not present
+// Seed default data (we overwrite to ensure the latest analysis is always set)
 Object.keys(defaultAnalysisData).forEach(key => {
-    if (!localStorage.getItem(key)) {
-        localStorage.setItem(key, defaultAnalysisData[key]);
-    }
+    localStorage.setItem(key, defaultAnalysisData[key]);
 });
 let analysisPanelOpen = false;
 
