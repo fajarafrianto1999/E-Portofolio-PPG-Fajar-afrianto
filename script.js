@@ -714,4 +714,46 @@ document.addEventListener('DOMContentLoaded', () => {
             openAnalysisModal(artefact, file);
         });
     });
+
+    // 10. Dokumentasi Button Navigation Slide (Click left/right buttons to slide)
+    const docGallery = document.querySelector('.doc-gallery');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    if (docGallery && prevBtn && nextBtn) {
+        const updateButtons = () => {
+            const scrollLeft = docGallery.scrollLeft;
+            const maxScrollLeft = docGallery.scrollWidth - docGallery.clientWidth;
+            
+            // Fade out prev button if scrolled to the beginning
+            if (scrollLeft <= 5) {
+                prevBtn.style.opacity = '0';
+                prevBtn.style.pointerEvents = 'none';
+            } else {
+                prevBtn.style.opacity = '1';
+                prevBtn.style.pointerEvents = 'auto';
+            }
+            
+            // Fade out next button if scrolled to the end
+            if (scrollLeft >= maxScrollLeft - 5) {
+                nextBtn.style.opacity = '0';
+                nextBtn.style.pointerEvents = 'none';
+            } else {
+                nextBtn.style.opacity = '1';
+                nextBtn.style.pointerEvents = 'auto';
+            }
+        };
+        
+        prevBtn.addEventListener('click', () => {
+            docGallery.scrollBy({ left: -344, behavior: 'smooth' }); // card width 320 + gap 24
+        });
+        nextBtn.addEventListener('click', () => {
+            docGallery.scrollBy({ left: 344, behavior: 'smooth' });
+        });
+        
+        docGallery.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        
+        // Run initial check
+        setTimeout(updateButtons, 100);
+    }
 });

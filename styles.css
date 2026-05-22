@@ -1027,4 +1027,59 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
+/* Slide Navigation Button Controls */
+.doc-gallery-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    background: var(--bg-surface-glass);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.4rem;
+    transition: all var(--transition-fast), opacity 0.3s ease;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.slide-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 0 15px var(--primary-glow);
+    color: #121212;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.slide-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.prev-btn {
+    left: -23px;
+}
+
+.next-btn {
+    right: -23px;
+}
+
+/* Hide or position controls differently on smaller screens */
+@media (max-width: 768px) {
+    .slide-btn {
+        display: none;
+    }
+}
+
+
 
