@@ -1,0 +1,12 @@
+{
+  "userSettings": {
+    "globalPermissionGrants": {
+      "allow": [
+        "command(Select-String)",
+        "command(npx)",
+        "command(Get-Content)",
+        "command(Get-ChildItem)"
+      ]
+    }
+  }
+}
