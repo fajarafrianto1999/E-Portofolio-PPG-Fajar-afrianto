@@ -334,7 +334,35 @@ Kelebihan
 Penyajian materi cukup menarik dan runtut karena dibagi berdasarkan tahapan kerja. Adanya tabel perbandingan HSS dan karbida juga membantu murid memahami penggunaan pahat dalam dunia industri.
 
 Kekurangan
-Penjelasan bentuk insert karbida seperti rhombic, triangular, square, dan round masih berupa teks. Akan lebih baik jika ditambahkan gambar bentuk insert agar murid lebih mudah mengenali bentuk aslinya saat praktik di bengkel.`
+Penjelasan bentuk insert karbida seperti rhombic, triangular, square, dan round masih berupa teks. Akan lebih baik jika ditambahkan gambar bentuk insert agar murid lebih mudah mengenali bentuk aslinya saat praktik di bengkel.`,
+
+    'analysis-lampiran-7:-penilaian-perangkat': `Konteks
+Instrumen penilaian perangkat pembelajaran ini digunakan untuk mengevaluasi kelengkapan, kesesuaian tujuan, serta kualitas media ajar yang telah disusun untuk kegiatan PPL Terbimbing di SMK Muhammadiyah 3 Yogyakarta.
+
+Tujuan
+- Mengevaluasi kesesuaian antara rencana pelaksanaan pembelajaran (RPP) dengan pelaksanaan di lapangan.
+- Memastikan media ajar, LKM, dan rubrik penilaian telah memenuhi standar kompetensi yang ditetapkan.
+
+Kelebihan
+- Aspek penilaian sangat komprehensif, mencakup kelengkapan administrasi hingga kesesuaian media pembelajaran.
+- Membantu memberikan umpan balik terstruktur demi perbaikan kualitas perangkat ajar berikutnya.
+
+Kekurangan
+- Proses evaluasi perangkat membutuhkan waktu koordinasi yang cukup intensif antara mahasiswa dengan guru pamong/dosen pembimbing.`,
+
+    'analysis-lampiran-8:-praktik-mengajar': `Konteks
+Instrumen penilaian praktik mengajar ini digunakan untuk mengevaluasi penampilan dan performa mengajar mahasiswa saat melaksanakan PPL Terbimbing di SMK Muhammadiyah 3 Yogyakarta.
+
+Tujuan
+- Mengukur kompetensi pedagogik, kepribadian, sosial, dan profesional mahasiswa secara langsung saat mengajar di kelas maupun bengkel.
+- Memastikan penyampaian materi dan pengelolaan kelas berjalan efektif serta efisien.
+
+Kelebihan
+- Rubrik penilaian dirancang objektif dengan indikator performa yang jelas selama proses pembelajaran berlangsung.
+- Memberikan gambaran nyata kompetensi mengajar riil di hadapan siswa.
+
+Kekurangan
+- Penilaian dapat dipengaruhi oleh subjektivitas pengamat jika tidak diselaraskan dengan persepsi awal sebelum observasi.`
 };
 
 // Seed default data (we overwrite to ensure the latest analysis is always set)
@@ -757,3 +785,82 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(updateButtons, 100);
     }
 });
+
+// ============================================================
+// Global functions for Analisis Artefak cards
+// ============================================================
+function openAnalisisModal(type) {
+    const modal = document.getElementById('analisis-modal');
+    const icon = document.getElementById('analisis-modal-icon');
+    const title = document.getElementById('analisis-modal-title');
+    const body = document.getElementById('analisis-modal-body');
+    
+    if (!modal || !icon || !title || !body) return;
+
+    let content = '';
+    let titleText = '';
+    let iconClass = '';
+    let iconColor = '';
+
+    if (type === 'kendala') {
+        titleText = 'Kendala Penyusunan';
+        iconClass = 'ph ph-warning-circle';
+        iconColor = '#f59e0b';
+        content = `
+            <div class="modal-section-title"><i class="ph ph-shield-warning"></i> Tantangan &amp; Hambatan Riil</div>
+            <p style="margin-bottom: 1.25rem;">Sebagai mahasiswa PPG yang melaksanakan praktik lapangan (PPL), kendala utama yang saya hadapi adalah menyelaraskan rancangan Modul Ajar/RPP dengan <strong>kemampuan awal peserta didik yang sangat heterogen</strong>. Beberapa siswa sudah terbiasa dengan alat mekanik, sementara yang lain membutuhkan pendampingan ekstra (<em>scaffolding</em>) bahkan untuk langkah awal penyusunan benda kerja.</p>
+            
+            <div class="modal-section-title"><i class="ph ph-wrench"></i> Faktor Teknis &amp; Alokasi Waktu</div>
+            <p>Selain perbedaan kesiapan belajar (<em>readiness</em>), alokasi waktu praktik di bengkel pemesinan bubut sering kali terasa sangat padat. Hal ini menuntut saya untuk pandai menyiasati waktu agar proses penyayatan poros bertingkat maupun eksentrik dapat selesai dengan presisi dan tetap mengutamakan aspek keselamatan kerja (K3).</p>
+        `;
+    } else if (type === 'teori') {
+        titleText = 'Teori/Konsep Pedagogi';
+        iconClass = 'ph ph-gear';
+        iconColor = 'var(--primary-neon)';
+        content = `
+            <div class="modal-section-title"><i class="ph ph-books"></i> Filosofi &amp; Landasan Teoretis</div>
+            <p style="margin-bottom: 1.25rem;">Penyusunan perangkat pembelajaran ini didasarkan pada <strong>Filosofi Pendidikan Ki Hadjar Dewantara</strong>, khususnya pemikiran tentang 'Sistem Among' yang berpusat pada menuntun kodrat alami peserta didik. Sebagai calon guru profesional, saya berusaha memfasilitasi kebutuhan belajar siswa melalui integrasi <strong>TPACK</strong> (<em>Technological Pedagogical Content Knowledge</em>) dalam penyajian materi.</p>
+            
+            <div class="modal-section-title"><i class="ph ph-lightning"></i> Model Pembelajaran Kejuruan</div>
+            <p>Saya menerapkan sintaks model pembelajaran <em>Problem-Based Learning</em> (PBL) untuk membekali siswa dengan pemecahan masalah teoritis K3, serta <em>Project-Based Learning</em> (PjBL) untuk melatih keterampilan psikomotorik di bengkel. Pendekatan konstruktivistik ini sangat efektif dalam memicu kemandirian belajar (<em>active learning</em>) siswa.</p>
+        `;
+    } else if (type === 'faktor') {
+        titleText = 'Faktor Keberhasilan';
+        iconClass = 'ph ph-target';
+        iconColor = '#10b981';
+        content = `
+            <div class="modal-section-title"><i class="ph ph-crown"></i> Kunci Sukses Implementasi</div>
+            <p style="margin-bottom: 1.25rem;">Faktor penentu keberhasilan praktik ini adalah tingginya motivasi peserta didik karena mereka diajak membuat produk yang memiliki fungsi nyata di industri (seperti alat penarik/<em>flywheel puller</em>). Selain itu, penerapan strategi <strong>tutor sebaya</strong> (<em>peer tutoring</em>) terbukti efektif mempercepat proses pemahaman praktis siswa saat bekerja berkelompok.</p>
+            
+            <div class="modal-section-title"><i class="ph ph-users-three"></i> Pendampingan Dosen &amp; Guru Pamong</div>
+            <p>Umpan balik yang reflektif serta bimbingan intensif dari Dosen Pembimbing Lapangan dan Guru Pamong selama siklus pembelajaran (PPL Terbimbing) berkontribusi besar dalam penyempurnaan rancangan asesmen dan modul ajar yang berorientasi pada pencapaian tujuan pembelajaran secara optimal.</p>
+        `;
+    } else if (type === 'adaptasi') {
+        titleText = 'Adaptasi Situasi Kelas';
+        iconClass = 'ph ph-arrows-clockwise';
+        iconColor = 'var(--secondary-neon)';
+        content = `
+            <div class="modal-section-title"><i class="ph ph-intersect"></i> Fleksibilitas &amp; Manajemen Kelas</div>
+            <p style="margin-bottom: 1.25rem;">Kondisi riil di sekolah sering kali dihadapkan pada keterbatasan jumlah mesin bubut yang aktif dibandingkan rasio siswa yang ada. Menghadapi situasi ini, saya mengadaptasi manajemen bengkel dengan menggunakan <strong>sistem rotasi kelompok kerja (station)</strong> yang dinamis.</p>
+            
+            <div class="modal-section-title"><i class="ph ph-arrows-merge"></i> Skenario Alternatif yang Edukatif</div>
+            <p>Kelompok siswa yang sedang mengantre atau menunggu giliran praktik tidak dibiarkan pasif. Mereka diarahkan untuk melakukan aktivitas bermakna lain yang saling terintegrasi, seperti berlatih melakukan pengukuran presisi menggunakan jangka sorong/mikrometer sekrup, menganalisis lembar kerja murid (LKM), atau melakukan evaluasi teoritis K3.</p>
+        `;
+    }
+
+    icon.className = iconClass;
+    icon.style.color = iconColor;
+    title.textContent = titleText;
+    body.innerHTML = content;
+
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeAnalisisModal() {
+    const modal = document.getElementById('analisis-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+}
